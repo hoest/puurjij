@@ -1,0 +1,54 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Muli", sans-serif;
+  font-weight: 400;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.silvereffect {
+  background-color: Silver;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(Gray), to(Silver));
+  background-image: -webkit-linear-gradient(linear, 0% 0%, 0% 100%, from(Gray), to(Silver));
+  background-image:    -moz-linear-gradient(100% 100% 90deg, Gray, Silver);
+  background-image:     -ms-linear-gradient(100% 100% 90deg, Gray, Silver);
+  background-image:      -o-linear-gradient(100% 100% 90deg, Gray, Silver);
+  background-image:         linear-gradient(100% 100% 90deg, Gray, Silver);
+}
+
+.image-slider {
+  border: 5px solid #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+header, main, footer {
+  padding: 1em 0;
+  display: block;
+}
+
+/* Small screens */
+@media only screen {
+  /* Define mobile styles */
+}
+
+@media only screen and (max-width: 40em) {
+  /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+}
+
+/* Medium screens */
+@media only screen and (min-width: 40.063em) {
+  /* min-width 641px, medium screens */
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+}
+
+/* Large screens */
+@media only screen and (min-width: 64.063em) {
+  /* min-width 1025px, large screens */
+}
