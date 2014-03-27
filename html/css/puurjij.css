@@ -17,6 +17,20 @@ h1, h2, h3, h4, h5, h6 {
   background-image:         linear-gradient(100% 100% 90deg, Gray, Silver);
 }
 
+.silvereffect-invert {
+  background-color: Silver;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(Silver), to(Gray));
+  background-image: -webkit-linear-gradient(linear, 0% 0%, 0% 100%, from(Silver), to(Gray));
+  background-image:    -moz-linear-gradient(100% 100% 90deg, Silver, Gray);
+  background-image:     -ms-linear-gradient(100% 100% 90deg, Silver, Gray);
+  background-image:      -o-linear-gradient(100% 100% 90deg, Silver, Gray);
+  background-image:         linear-gradient(100% 100% 90deg, Silver, Gray);
+}
+
+.logo {
+  margin: 1em 0;
+}
+
 .image-slider {
   border: 5px solid #fff;
 }
@@ -42,6 +56,20 @@ header, main, footer {
 /* Medium screens */
 @media only screen and (min-width: 40.063em) {
   /* min-width 641px, medium screens */
+  .row {
+    position: relative;
+  }
+
+  .logo {
+    margin: 0;
+    position: absolute;
+    z-index: 999;
+    top: 2em;
+    left: 2em;
+    width: 125%;
+    clear: both;
+    float: left;
+  }
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
