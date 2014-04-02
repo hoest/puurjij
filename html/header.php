@@ -94,23 +94,6 @@
         </ul>
 
         <section class="top-bar-section">
-          <!-- <ul class="right">
-            <li class="active">
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Behandeling</a>
-            </li>
-            <li>
-              <a href="#">Prijzen</a>
-            </li>
-            <li>
-              <a href="#">Actie</a>
-            </li>
-            <li>
-              <a href="#">Over PUUR JIJ</a>
-            </li>
-          </ul> -->
           <?php wp_nav_menu(array(
             'container_class' => 'right',
             'theme_location' => 'primary')); ?>
