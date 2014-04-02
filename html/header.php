@@ -95,7 +95,10 @@
 
         <section class="top-bar-section">
           <?php wp_nav_menu(array(
+            'container' => '',
             'container_class' => 'right',
+            'items_wrap' => '<ul id="%1$s" role="navigation" class="right %2$s">%3$s</ul>',
+            'walker' => new top_bar_walker(),
             'theme_location' => 'primary')); ?>
         </section>
       </nav>
