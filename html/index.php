@@ -2,7 +2,7 @@
 
 <div class="medium-8 columns">
 <?php while (have_posts()) : the_post(); ?>
-  <article class="<?php post_class(); ?>" id="post-<?php the_ID(); ?>">
+  <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
     <h1 class="entry-title">
       <a title="<?php printf(esc_attr__( 'Permalink to %s', 'compass' ), the_title_attribute( 'echo=0' ) ); ?>"
          href="<?php the_permalink(); ?>" rel="bookmark">

@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-<!--[if lt IE 8]><html class="ie7 no-js" lang="nl"><![endif]-->
-<!--[if IE 8]><html class="ie8 no-js" lang="nl"><![endif]-->
-<!--[if IE 9]><html class="ie9 no-js" lang="nl"><![endif]-->
-<!--[if gt IE 9]><html class="no-js" lang="nl"><![endif]-->
-<!--[if !IE]><html class="no-js" lang="nl"><![endif]-->
+<!--[if IE 9]><html class="lt-ie10" lang="nl" > <![endif]-->
+<html class="no-js" lang="nl" >
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,9 +20,7 @@
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.1/css/normalize.min.css" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.1/css/foundation.min.css" />
-
     <link href="http://fonts.googleapis.com/css?family=Muli:300,400" rel="stylesheet" type="text/css">
-
     <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.1/js/vendor/modernizr.min.js"></script>
@@ -44,7 +39,7 @@
         <div class="medium-4 columns">
           <div class="logo">
             <a href="<?php echo home_url(); ?>">
-              <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/logo/puurjij-small.png" />
+              <img alt="PUUR JIJ Schoonheidssalong - Logo" src="<?php bloginfo( 'stylesheet_directory' ); ?>/logo/puurjij-small.png" />
             </a>
           </div>
         </div>
@@ -53,7 +48,7 @@
             <ul data-orbit
                 data-options="animation:slide;
                               pause_on_hover:true;
-                              timer_speed:1500;
+                              timer_speed:5000;
                               animation_speed:500;
                               slide_number:false;
                               resume_on_mouseout:true;
@@ -97,7 +92,7 @@
           <?php wp_nav_menu(array(
             'container' => '',
             'container_class' => 'right',
-            'items_wrap' => '<ul id="%1$s" role="navigation" class="right %2$s">%3$s</ul>',
+            'items_wrap' => '<ul id="%1$s" class="right %2$s">%3$s</ul>',
             'walker' => new top_bar_walker(),
             'theme_location' => 'primary')); ?>
         </section>

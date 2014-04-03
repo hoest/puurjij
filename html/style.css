@@ -44,6 +44,37 @@ header, main, footer {
   display: block;
 }
 
+.type-page .entry-meta {
+  display: none;
+}
+
+.type-post .entry-meta p {
+  font-style: italic;
+  font-size: .8em;
+}
+
+.type-post .entry-meta .category-links a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .8em;
+}
+
+footer .google-maps {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+aside h2,
+footer h2 {
+  font-size: 1.8em;
+}
+
+aside p,
+footer p {
+  font-size: .8em;
+}
+
 /* Small screens */
 @media only screen {
   /* Define mobile styles */
