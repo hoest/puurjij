@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!--[if IE 9]><html class="lt-ie10" lang="nl" > <![endif]-->
-<html class="no-js" lang="nl" >
+<!--[if IE 9]><html class="lt-ie10" lang="nl" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<html class="no-js" lang="nl" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,6 +24,28 @@
     <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.1/js/vendor/modernizr.min.js"></script>
+
+    <meta name="author" content="<?php bloginfo('name'); ?>" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="5 days" />
+
+    <!-- if page is content page -->
+    <?php if (is_single()) { ?>
+    <meta property="og:url" content="<?php the_permalink() ?>"/>
+    <meta property="og:title" content="<?php single_post_title(''); ?>" />
+    <meta property="og:description" content="<?php echo strip_tags(get_the_excerpt($post->ID)); ?>" />
+    <meta name="description" content="<?php echo strip_tags(get_the_excerpt($post->ID)); ?>" />
+    <meta property="og:type" content="article" />
+
+    <!-- if page is others -->
+    <?php } else { ?>
+    <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
+    <meta property="og:description" content="<?php bloginfo('description'); ?>" />
+    <meta name="description" content="<?php bloginfo('description'); ?>" /s>
+    <meta property="og:type" content="website" />
+    <?php } ?>
+
+    <meta property="og:image" content="<?php bloginfo( 'stylesheet_directory' ); ?>/logo/puurjij-small.png"/>
 
     <?php wp_head(); ?>
   </head>
