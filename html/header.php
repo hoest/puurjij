@@ -68,7 +68,7 @@
         <div class="medium-8 columns">
           <div class="image-slider">
             <ul data-orbit
-                data-options="animation:slide;
+                data-options="animation:fade;
                               pause_on_hover:true;
                               timer_speed:5000;
                               animation_speed:500;
