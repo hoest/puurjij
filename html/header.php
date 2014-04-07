@@ -70,12 +70,15 @@
             <ul data-orbit
                 data-options="animation:fade;
                               pause_on_hover:true;
-                              timer_speed:5000;
-                              animation_speed:500;
+                              timer_speed:7000;
+                              animation_speed:3000;
                               slide_number:false;
                               resume_on_mouseout:true;
                               navigation_arrows:true;
-                              bullets:false;">
+                              bullets:false;
+                              timer_container_class:timer;
+                              timer_progress_class:timer_progress;
+                              timer_show_progress_bar:false;">
               <li>
                 <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photo-001.jpg" alt="slide 1" />
               </li>
