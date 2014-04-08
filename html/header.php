@@ -2,26 +2,27 @@
 <!--[if IE 9]><html class="lt-ie10" lang="nl" prefix="og: http://ogp.me/ns#"> <![endif]-->
 <html class="no-js" lang="nl" prefix="og: http://ogp.me/ns#">
   <head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>
       <?php
       global $page, $paged;
-      wp_title( '|', true, 'right' );
+      wp_title('|', true, 'right');
       // Add the blog name.
-      bloginfo( 'name' );
+      bloginfo('name');
       // Add the blog description for the home/front page.
-      $site_description = get_bloginfo( 'description', 'display' );
-      if ( $site_description && ( is_home() || is_front_page() ) )
-        echo " - $site_description";
+      $site_description = get_bloginfo('description', 'display');
+      // if ($site_description && (is_home() || is_front_page()))
+      //   echo " - $site_description";
+        echo " - Welkom";
       ?>
     </title>
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.1/css/normalize.min.css" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.1/css/foundation.min.css" />
     <link href="http://fonts.googleapis.com/css?family=Muli:300,400" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.1/js/vendor/modernizr.min.js"></script>
 
@@ -41,11 +42,13 @@
     <?php } else { ?>
     <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
     <meta property="og:description" content="<?php bloginfo('description'); ?>" />
-    <meta name="description" content="<?php bloginfo('description'); ?>" /s>
+    <meta name="description" content="<?php bloginfo('description'); ?>" />
     <meta property="og:type" content="website" />
     <?php } ?>
 
-    <meta property="og:image" content="<?php bloginfo( 'stylesheet_directory' ); ?>/logo/puurjij-small.png"/>
+    <meta property="og:image" content="<?php bloginfo('stylesheet_directory'); ?>/logo/puurjij-small.png"/>
+
+    <meta name="keywords" content="puur jij, puurjij, hilversum, schoonheidssalon, schoonheid, schoonheidsspecialiste, noord-holland, nederland, behandeling, huid, massage, salon, peeling, masker, huidanalyse, huidadvies, lichaamsbehandeling, wenkbrauwen, wimpers, verven, epileren, harsen, benen, bikinilijn, oksels, schouders, rug, Quick Hydra System, Men Care, OXY-Peeling, Jeugd behandeling, Time Cellular Care, Molucular Care" />
 
     <?php wp_head(); ?>
   </head>
@@ -53,15 +56,15 @@
     <header class="silvereffect">
       <div class="row hidden">
         <div class="medium-12 columns">
-          <h1><?php bloginfo( 'name' ); ?></h1>
-          <h2><?php bloginfo( 'description' ); ?></h2>
+          <h1><?php bloginfo('name'); ?></h1>
+          <h2><?php bloginfo('description'); ?></h2>
         </div>
       </div>
       <div class="row">
         <div class="medium-4 columns">
           <div class="logo">
             <a href="<?php echo home_url(); ?>">
-              <img alt="PUUR JIJ Schoonheidssalong - Logo" src="<?php bloginfo( 'stylesheet_directory' ); ?>/logo/puurjij-small.png" />
+              <img alt="PUUR JIJ Schoonheidssalong - Logo" src="<?php bloginfo('stylesheet_directory'); ?>/logo/puurjij-small.png" />
             </a>
           </div>
         </div>
@@ -80,25 +83,25 @@
                               timer_progress_class:timer_progress;
                               timer_show_progress_bar:false;">
               <li>
-                <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photo-001.jpg" alt="slide 1" />
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/photo-001.jpg" alt="slide 1" />
               </li>
               <li>
-                <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photo-002.jpg" alt="slide 2" />
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/photo-002.jpg" alt="slide 2" />
               </li>
               <li>
-                <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photo-003.jpg" alt="slide 1" />
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/photo-003.jpg" alt="slide 1" />
               </li>
               <li>
-                <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photo-004.jpg" alt="slide 1" />
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/photo-004.jpg" alt="slide 1" />
               </li>
               <li>
-                <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photo-005.jpg" alt="slide 1" />
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/photo-005.jpg" alt="slide 1" />
               </li>
               <li>
-                <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photo-006.jpg" alt="slide 1" />
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/photo-006.jpg" alt="slide 1" />
               </li>
               <li>
-                <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photo-007.jpg" alt="slide 1" />
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/photo-007.jpg" alt="slide 1" />
               </li>
             </ul>
           </div>
