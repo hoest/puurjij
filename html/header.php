@@ -73,8 +73,8 @@
             <ul data-orbit
                 data-options="animation:fade;
                               pause_on_hover:true;
-                              timer_speed:7000;
-                              animation_speed:3000;
+                              timer_speed:5000;
+                              animation_speed:4000;
                               slide_number:false;
                               resume_on_mouseout:true;
                               navigation_arrows:true;
