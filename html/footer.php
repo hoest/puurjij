@@ -11,8 +11,22 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.1/js/foundation.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.1/js/foundation/foundation.orbit.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.1/js/foundation/foundation.topbar.min.js"></script>
-    <script>
-      $(document).foundation();
+    <script type="text/javascript">
+      $(document).foundation({
+        orbit: {
+          animation: 'fade',
+          timer_speed: 10000,
+          pause_on_hover: true,
+          resume_on_mouseout: false,
+          animation_speed: 4000,
+          navigation_arrows: true,
+          slide_number: false,
+          timer_container_class: 'timer',
+          timer_progress_class: 'timer-progress',
+          timer_show_progress_bar: false,
+          bullets: false
+        }
+      });
     </script>
     <script type="text/javascript">
       var $buoop = {};

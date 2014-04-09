@@ -8,6 +8,17 @@ add_action('init', 'puurjij_register_theme_menu');
 function puurjij_widgets_init() {
   // Sidebar widget area, located in the sidebar. Empty by default.
   register_sidebar(array(
+    'name' => 'Header Widget Area',
+    'id' => 'header-widget-area',
+    'description' => 'De widget area voor de header (afbeeldingen)',
+    'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+    'after_widget' => '</li>',
+    'before_title' => '<div class="hidden">',
+    'after_title' => '</div>',
+  ));
+
+  // Sidebar widget area, located in the sidebar. Empty by default.
+  register_sidebar(array(
     'name' => 'Zijbalk Widget Area',
     'id' => 'sidebar-widget-area',
     'description' => 'De widget area voor de zijbalk',

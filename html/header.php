@@ -70,18 +70,7 @@
         </div>
         <div class="medium-8 columns">
           <div class="image-slider">
-            <ul data-orbit
-                data-options="animation:fade;
-                              pause_on_hover:true;
-                              timer_speed:5000;
-                              animation_speed:4000;
-                              slide_number:false;
-                              resume_on_mouseout:true;
-                              navigation_arrows:true;
-                              bullets:false;
-                              timer_container_class:timer;
-                              timer_progress_class:timer_progress;
-                              timer_show_progress_bar:false;">
+            <ul data-orbit>
               <li>
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/images/photo-001.jpg" alt="slide 1" />
               </li>
@@ -103,6 +92,7 @@
               <li>
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/images/photo-007.jpg" alt="slide 1" />
               </li>
+              <!-- ?php dynamic_sidebar('header-widget-area'); ? -->
             </ul>
           </div>
         </div>
