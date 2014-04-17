@@ -112,6 +112,13 @@ aside p {
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+  footer h2 {
+    font-size: 1.8rem;
+  }
+
+  footer p {
+    font-size: .8rem;
+  }
 }
 
 /* Large screens */
